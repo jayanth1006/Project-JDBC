@@ -88,9 +88,9 @@ import javax.swing.*;
                 if (s8.equals(s9))  
                 {  
                     try  
-                    {  
-                        Class.forName("com.mysql.cj.jdbc.Driver");  
-                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/workingdb", "root", "Vampass123@");  
+                    {  	
+                        Class.forName("com.mysql.jc.jdbc.Driver");  
+                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "Anth@3210");  
                         Statement statement = con.createStatement();
                         String insertQuery="insert into reg values('"+s1+"','"+s2+"','"+s8+"','"+s5+"','"+s6+"',"+s7+")";
 		                statement.executeUpdate(insertQuery); 
